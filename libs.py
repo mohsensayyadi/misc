@@ -1,32 +1,64 @@
-import pandas as pd
-#import seaborn as sns
+# =========================
+# Core
+# =========================
 import numpy as np
-from sklearn.metrics import accuracy_score
-#import shutil
-#from IPython.core.display import display, HTML
 import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
-import xgboost as xgb
-#from snapml.dao import gdao
-from sklearn.model_selection import train_test_split, KFold
-from sklearn_pandas import DataFrameMapper
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelBinarizer, LabelEncoder
-import sklearn
-from xgboost import XGBClassifier
-from sklearn.metrics import f1_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
+
+# =========================
+# Visualization
+# =========================
 import matplotlib.pyplot as plt
-from sklearn.model_selection import cross_val_score
-from sklearn.metrics import plot_confusion_matrix
-from sklearn import tree
+# import seaborn as sns
+
+# =========================
+# Train / Validation
+# =========================
+from sklearn.model_selection import (
+    train_test_split,
+    KFold,
+    cross_val_score
+)
+
+# =========================
+# Preprocessing
+# =========================
+from sklearn.preprocessing import (
+    StandardScaler,
+    OneHotEncoder,
+    LabelEncoder,
+    LabelBinarizer
+)
+
+# =========================
+# Models
+# =========================
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
+
+# =========================
+# Metrics
+# =========================
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    roc_auc_score,
+    log_loss,
+    classification_report
+)
+
+# =========================
+# Imbalanced Data
+# =========================
 from sklearn.utils import resample
-#from imxgboost.imbalance_xgb import imbalance_xgboost as imb_xgb
+
+# =========================
+# Utilities
+# =========================
 import pickle
 import datetime
 import time
-from numpy.random import seed
 import random
